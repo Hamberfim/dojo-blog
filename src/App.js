@@ -1,32 +1,33 @@
-import logo from './logo.svg';
 import './App.css';
 
 function App() {
+  // standard JS outside the the JSX template return
+  const title = "Welcome to a Blog made using React 17";
+  // react converts JS number, string and array datatypes to a string before output 
+  let likes = 125;  // integer to string via React JSX template return
+  // (But Not Booleans or Objects) i.e., 
+  // let myObj = {name: 'Tom', age: 56};  // WILL ERROR OUT
+
+
+  // return the JSX template
   return (
     <div className="App">
-      <header className="App-header">
-        <h1>React JS - Simple React SPA</h1>
-
         {/* 
-          Next video will be number 3:
-          
-          https://www.youtube.com/playlist?list=PL4cUxeGkcC9gZD-Tvwfod2gaISzfRiP9d
-        
+          comments inside jsx must be surrounded with curly brackets
         */}
 
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+        <div className="content">
+          <h1>{title}</h1>
+          <p>Liked {likes} times</p>
+          <p>{/* myObj */}</p>
+
+          {/*  js staements that returns a vaild value (string, number, array)*/}
+          <p>{"Your name here"}</p>
+          <p>{625}</p>
+          <p>{[5, 4, 3, 2, 1]}</p>
+          <p>{"Random whole Number = " + (Math.random() * 100).toFixed(0)}</p>
+
+        </div>
     </div>
   );
 }
