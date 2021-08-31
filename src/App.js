@@ -1,4 +1,6 @@
 import './App.css';
+import Navbar from './Navbar';
+import Home from './Home'
 
 // root component of the application - component tree
 function App() {
@@ -7,11 +9,12 @@ function App() {
   // return the JSX template
   return (
     <div className="App">
-        {/* comments inside jsx must be surrounded with curly brackets */}
-        <div className="content">
-          
-
-        </div>
+      {/* Navbar */}
+      <Navbar />
+      {/* page content */}
+      <div className="content">
+        <Home /> 
+      </div>
     </div>
   );
 }
