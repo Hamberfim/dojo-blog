@@ -8,6 +8,10 @@ function App() {
   // (But Not Booleans or Objects) i.e., 
   // let myObj = {name: 'Tom', age: 56};  // WILL ERROR OUT
 
+  // html attributes as dynamic values
+  const openTab =  "_blank";
+  const myLink = "https://github.com/Hamberfim";
+
 
   // return the JSX template
   return (
@@ -26,6 +30,8 @@ function App() {
           <p>{625}</p>
           <p>{[5, 4, 3, 2, 1]}</p>
           <p>{"Random whole Number = " + (Math.random() * 100).toFixed(0)}</p>
+
+          <a href={myLink} target={openTab}>My GitHub</a>
 
         </div>
     </div>
