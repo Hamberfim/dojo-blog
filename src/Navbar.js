@@ -18,6 +18,20 @@ const Navbar = () => {
             <div className="links">
                 <a href="/">Home</a>
                 <a href="/create">New Blog</a>
+                <a href="/about">About</a>
+
+                {/* inline Style - Dynamic value with a nested js object-key:value pairs 
+                note use of camelCase for css backgroundColor but not background-color 
+                
+                <a href="/create" style={{
+                    color: "white",
+                    backgroundColor: "black",
+                    padding: "5px 9px",
+                    borderRadius: "7px"
+                }}>Some Link</a>
+                
+                */}
+
             </div>
         </nav>
      );
