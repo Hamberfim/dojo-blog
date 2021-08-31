@@ -1,4 +1,5 @@
 import './App.css';
+import Masthead from './Masthead';
 import Navbar from './Navbar';
 import Home from './Home'
 
@@ -9,6 +10,8 @@ function App() {
   // return the JSX template
   return (
     <div className="App">
+      {/* masthead area */}
+      <Masthead />
       {/* Navbar */}
       <Navbar />
       {/* page content */}
