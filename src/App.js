@@ -1,14 +1,16 @@
 import './App.css';
 
+// root component of the application - component tree
 function App() {
   // standard JS outside the the JSX template return
   const title = "Welcome to a Blog made using React 17";
+
   // react converts JS number, string and array datatypes to a string before output 
   let likes = 125;  // integer to string via React JSX template return
   // (But Not Booleans or Objects) i.e., 
   // let myObj = {name: 'Tom', age: 56};  // WILL ERROR OUT
 
-  // html attributes as dynamic values
+  // html attributes as dynamic values/variables
   const openTab =  "_blank";
   const myLink = "https://github.com/Hamberfim";
 
