@@ -1,7 +1,10 @@
+import logo from './CookingLogo.svg';
+
 const Masthead = () => {
     return ( 
         <div className="masthead">
-            <h1>Blog Masthead - h1</h1>
+            <img src={logo} alt="Cooking Logo" height="90" />
+            <span className="masthead" > Food Blog Masthead</span>
         </div>
      );
 }
