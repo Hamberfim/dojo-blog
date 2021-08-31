@@ -1,7 +1,7 @@
 const Masthead = () => {
     return ( 
         <div className="masthead">
-            <h1>Blog Masthead</h1>
+            <h1>Blog Masthead - h1</h1>
         </div>
      );
 }

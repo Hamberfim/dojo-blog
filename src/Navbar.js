@@ -14,7 +14,7 @@
 const Navbar = () => {
     return ( 
         <nav className="navbar">
-            <h1>Menu</h1>
+            <h2>Subheader/Menu - h2</h2>
             <div className="links">
                 <a href="/">Home</a>
                 <a href="/create">New Blog</a>
