@@ -24,4 +24,4 @@ function App() {
 export default App;
 
 // https://www.youtube.com/playlist?list=PL4cUxeGkcC9gZD-Tvwfod2gaISzfRiP9d
-// next video is #8: https://youtu.be/4pO-HcG2igk?list=PL4cUxeGkcC9gZD-Tvwfod2gaISzfRiP9d
+// next video is #10: https://youtu.be/tHjxSVaj_wY?list=PL4cUxeGkcC9gZD-Tvwfod2gaISzfRiP9d
