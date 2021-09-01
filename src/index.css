@@ -17,7 +17,6 @@
   white-space: nowrap;
 }
 
-
 .navbar {
   margin-top: 0.9rem;
   display: flex;
@@ -72,4 +71,9 @@
 
 .button:hover {
   background-color: #164872;
+}
+
+.bigBill {
+  font-size: larger;
+  font-weight: bolder;
 }
