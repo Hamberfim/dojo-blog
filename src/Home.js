@@ -15,10 +15,15 @@ const Home = () => {
         {id: 9, title: 'Stand Mixer Dough Hooks', copy: 'Lorem ipsum...', author: 'Sarah'}
     ]);
 
+    const handleDelete = (id) => {
+        const newBlogs = blogs.filter(blog => blog.id !== id);
+        setBlogs(newBlogs);
+    }
+
     // JSX return template 
     return ( 
         <div className="home">
-            <BlogList blogs={blogs} title="All Blogs" />
+            <BlogList blogs={blogs} title="All Blogs" handleDelete={handleDelete} />
             <BlogList blogs={blogs.filter((blog) => blog.author === 'Bill')} title="Bill's Blogs" />
             <BlogList blogs={blogs.filter((blog) => blog.author === 'Sarah')} title="Sarah's Blogs" />
         </div>
