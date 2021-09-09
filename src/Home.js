@@ -1,28 +1,26 @@
 import {useState} from 'react';
+import BlogList from './BlogList';
 
 const Home = () => {
-    // array destructuring for useState Hook
-    const [name, setName] = useState('Little Bill');  // made reactive ( or like kockout.js it's observable)
-    // array destructuring - value = age, the set function = setAge
-    const [age, setAge] = useState(25);
-;
-    // home page button click
-    const handleClick = () => {
-        // useState array destructuring set Function Call
-        setName('Big Bill');
-        setAge(55);
-    }
-
+    const [blogs, setBlogs] = useState([
+        {id: 0, title: 'Long Dought Fermentation', copy: 'Lorem ipsum...', author: 'Bill'},
+        {id: 1, title: 'What is a Pre-Ferment', copy: 'Lorem ipsum...', author: 'Sarah'},
+        {id: 2, title: 'Four, Water, Salt', copy: 'Lorem ipsum...', author: 'Bill'},
+        {id: 3, title: 'Bench Tools', copy: 'Lorem ipsum...', author: 'Sarah'},
+        {id: 4, title: 'Your Bakehouse', copy: 'Lorem ipsum...', author: 'Bill'},
+        {id: 5, title: 'Which Stand Mixer is right for You', copy: 'Lorem ipsum...', author: 'Sarah'},
+        {id: 6, title: 'Home Milling Flour', copy: 'Lorem ipsum...', author: 'Sarah'},
+        {id: 7, title: "When to use '00' flour", copy: 'Lorem ipsum...', author: 'Sarah'},
+        {id: 8, title: 'Room Temperature Fermentation', copy: 'Lorem ipsum...', author: 'Bill'},
+        {id: 9, title: 'Stand Mixer Dough Hooks', copy: 'Lorem ipsum...', author: 'Sarah'}
+    ]);
 
     // JSX return template 
     return ( 
         <div className="home">
-            <h3>Home Page - Content Header - h3</h3><br />
-            <p className="bigBill">{name} is {age} years old.</p>
-            {/* Button - can't invoke the function i.e., handleClick() on page load */}
-            <button className="button" onClick={handleClick}>Click Me</button>
-            <br />
-
+            <BlogList blogs={blogs} title="All Blogs" />
+            <BlogList blogs={blogs.filter((blog) => blog.author === 'Bill')} title="Bill's Blogs" />
+            <BlogList blogs={blogs.filter((blog) => blog.author === 'Sarah')} title="Sarah's Blogs" />
         </div>
      );
 }

@@ -77,3 +77,21 @@
   font-size: larger;
   font-weight: bolder;
 }
+
+/* blog previews / list */
+.blog-preview {
+  padding: 10px 16px;
+  margin: 20px 0;
+  border-bottom: 1px solid #fafafa;
+}
+
+/* offset-x | offset-y | blur-radius | spread-radius | color - Red, Green, Blue, Alpha-Transparency */
+.blog-preview:hover {
+  box-shadow: 3px 3px 5px 3px rgba(0,0,0,0.2); 
+}
+
+.blog-preview h2 {
+  font-size: 20px;
+  color: #1377c9;
+  margin-bottom: 8px;
+}
