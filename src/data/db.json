@@ -1,0 +1,28 @@
+{
+  "blogs": [
+    {
+      "id": 0,
+      "title": "Long Dought Fermentation",
+      "copy": "Lorem ipsum dolor sit amet.",
+      "author": "Bill"
+    },
+    {
+      "id": 1,
+      "title": "What is a Pre-Ferment",
+      "copy": "Lorem ipsum dolor sit amet.",
+      "author": "Sarah"
+    },
+    {
+      "id": 2,
+      "title": "Four, Water, Salt",
+      "copy": "Lorem ipsum dolor sit amet.",
+      "author": "Bill"
+    },
+    {
+      "id": 3,
+      "title": "Bench Tools",
+      "copy": "Lorem ipsum dolor sit amet.",
+      "author": "Sarah"
+    }
+  ]
+}
