@@ -23,6 +23,12 @@
       "title": "Bench Tools",
       "copy": "Lorem ipsum dolor sit amet.",
       "author": "Sarah"
+    },
+    {
+      "id": 4,
+      "title": "French Poolish",
+      "copy": "Lorem Ipsum Dolor Sit Amet",
+      "author": "Bill"
     }
   ]
 }
