@@ -25,3 +25,6 @@ export default App;
 
 // https://www.youtube.com/playlist?list=PL4cUxeGkcC9gZD-Tvwfod2gaISzfRiP9d
 // next video is #18: https://youtu.be/qtheqr0jgIQ?list=PL4cUxeGkcC9gZD-Tvwfod2gaISzfRiP9d
+
+// npm run start
+// npx json-server --watch data/db.json --port 8000  // for json server resource db

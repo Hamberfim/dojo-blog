@@ -4,6 +4,7 @@ import BlogList from "./BlogList";
 const Home = () => {
   // hard coded data  moved to ./data/db.json (json-server >>) npx json-server --watch src/data/db.json --port 8000
   const [blogs, setBlogs] = useState(null);
+  const [isPending, setIsPending] = useState(true);
 
   // useEffect with an anonymous function - runs every time there is a re-render
   useEffect(() => {
@@ -24,9 +25,10 @@ const Home = () => {
   // JSX return template
   return (
     <div className="home">
+        { isPending && <div>Loading...</div> }
         {blogs && <BlogList blogs={blogs} title="All Blogs" /> }
         {blogs && <BlogList blogs={blogs.filter((blog) => blog.author === "Bill")} title="Bill's Blogs" /> }
-        {blogs && <BlogList blogs={blogs.filter((blog) => blog.author === "Sarah")} title="Sarah's Blogs" /> }
+        {blogs && <BlogList blogs={blogs.filter((blog) => blog.author === "Sarah")} title="Sarah's Blogs" /> } 
         
     </div>
   );
